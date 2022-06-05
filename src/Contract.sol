@@ -8,9 +8,9 @@ import "openzeppelin-contracts/contracts/access/Ownable.sol";
 contract Greeter is Ownable {
     string private greeting;
     using Address for address;
-    constructor(string memory _greeting, address token) {
+    constructor(string memory _greeting, address _token) {
         greeting = _greeting;
-     //   IERC20 token = IERC20(token); // Uncomment me as well if you comment above
+       // IERC20 token = IERC20(_token); // Uncomment me as well if you uncomment above
     }
 
 }
